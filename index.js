@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const app = express();
 const PORT = 3000;
 const axios = require("axios");
+app.set('views', path.join(__dirname, 'views'));
 
 app.set('view engine', 'ejs'); 
 app.set('views', './views'); 
