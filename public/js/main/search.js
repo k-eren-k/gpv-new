@@ -74,7 +74,7 @@ function handleError(error) {
 userList.addEventListener("click", function(event) {
   if (event.target.classList.contains("user-item")) {
     const username = event.target.querySelector(".user-name").textContent;
-    window.location.href = `https://github.com/${username}`;
+    window.location.href = `https://gitpv.xyz/${username}`;
   }
 });
 
