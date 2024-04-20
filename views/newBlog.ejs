@@ -1,0 +1,25 @@
+<!-- newBlog.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Blog Post</title>
+</head>
+<body>
+    <h1>Create a New Blog Post</h1>
+    <form action="/blog" method="POST">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="shortDescription">Short Description:</label><br>
+        <textarea id="shortDescription" name="shortDescription" rows="2" cols="50" required></textarea><br><br>
+
+        <label for="longDescription">Long Description:</label><br>
+        <textarea id="longDescription" name="longDescription" rows="10" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

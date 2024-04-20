@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background-color: #0F0F0F;
+    background-image: radial-gradient(#1A1A1A 2px, transparent 2px);
+    background-size: 45px 45px; 
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
+  }

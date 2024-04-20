@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/main/header.css">
+  <link rel="stylesheet" href="css/gpv/bar.css">
+  <link rel="stylesheet" href="css/gpv/gists.css">
+  <link rel="stylesheet" href="css/gpv/repos.css">
+  <link rel="stylesheet" href="css/gpv/stats.css">
+  <link rel="stylesheet" href="css/gpv/user.css">
+  <link rel="stylesheet" href="css/main/header.css">
+  <link rel="stylesheet" href="css/main/features.css">
+  <link rel="stylesheet" href="css/main/blog.css">
+  <link rel="stylesheet" href="css/main/body.css">
+  <link rel="stylesheet" href="css/main/hero.css">
+  <link rel="stylesheet" href="css/mobile.css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="<%= user.avatar_url %>">
+  <meta name="description" content="<%= user.description %>" />
+  <meta name="application-name" content="Github Profile Viewer" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <meta name="creator" content="erenkrs" />
+  <meta name="publisher" content="erenkrs" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="<%= user.name %> | GPV" />
+  <meta property="og:description" content="<%= user.description %>" />
+  <meta property="og:url" content="https://gitpv.xyz/<%= user.name %>" />
+  <meta property="og:site_name" content="GitHub Profile Viewer" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="<%= user.avatar_url %>" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="<%= user.username %>" />
+  <meta name="twitter:description" content="<%= user.description %>" />
+  <meta name="keywords" content="github profile viewer, github stats, github profile" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="og:type" content="website">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@gitpv" />
+  <meta name="twitter:creator" content="@gitpvxyz" />
+  <meta name="twitter:image" content="<%= user.avatar_url %>">
+  <title><%= user.name %> | GPV</title>
+  <meta name="next-size-adjust" />
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css" />
+
+</head>
+
+<body>
+  <div class="container">
+    <%- include('include/header.ejs') %>
+    <%- include('components/gpv/user.ejs') %>
+    <%- include('include/bar.ejs') %>
+    <%- include('components/gpv/repos.ejs') %>
+    <%- include('components/gpv/gists.ejs') %>
+    <%- include('components/gpv/stats.ejs') %>
+  </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/main/search.js"></script>
+<script src="js/gpv/gpv.js"></script>
+<script src="js/gpv/button.js"></script>
+<script src="js/gpv/stats.js"></script>
+
+</html>

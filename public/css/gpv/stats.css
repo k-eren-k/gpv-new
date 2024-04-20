@@ -1,0 +1,57 @@
+#repoChart {
+  width: 100px;
+  height: 100px;
+}
+.info {
+  background-color: #191919;
+  width: calc(100% - 60px);
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+  margin-right: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.info div {
+  width: 100%;
+}
+
+.bilgi {
+  width: calc(100% - 40px);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI (Custom)", Roboto,
+    "Helvetica Neue", "Open Sans (Custom)", system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.bilgi:hover {
+  background-color: #171717;
+}
+
+.bilgi-left {
+  font-size: 17px;
+  margin-left: 20px;
+  color: #cececedc;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI (Custom)", Roboto,
+    "Helvetica Neue", "Open Sans (Custom)", system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  width: 50%;
+  display: flex;
+  text-align: left;
+}
+
+.bilgi-right {
+  width: 50%;
+  text-align: left;
+  color: #b9b9b9;
+}

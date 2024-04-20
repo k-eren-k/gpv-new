@@ -1,0 +1,78 @@
+
+
+@media screen and (max-width: 600px) {
+  .user-info {
+    display: block;
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .user-left,
+  .user-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .user-left img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .user-right {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .user-bar {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+
+  .bar button {
+    width: 80px;
+  }
+}
+
+
+@keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .f-Features {
+      width: calc(87% - 20px); 
+      height: 150px;
+      margin-right: 0; 
+    }
+    .container {
+      background-color: #111111;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+  }

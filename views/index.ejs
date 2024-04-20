@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+  <title>Github Profile Viewer</title>
+
+  <link rel="stylesheet" href="css/main/header.css">
+  <link rel="stylesheet" href="css/main/features.css">
+  <link rel="stylesheet" href="css/main/blog.css">
+  <link rel="stylesheet" href="css/main/body.css">
+  <link rel="stylesheet" href="css/main/hero.css">
+  <link rel="stylesheet" href="css/mobile.css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.png">
+  <meta name="description" content="Explore GitHub and Gist profile statistics effortlessly, utilizing the GitHub REST API to retrieve comprehensive information. " />
+  <meta name="application-name" content="Github Profile Viewer" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <meta name="creator" content="erenkrs" />
+  <meta name="publisher" content="erenkrs" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Github Profile Viewer" />
+  <meta property="og:description" content="Explore GitHub and Gist profile statistics effortlessly, utilizing the GitHub REST API to retrieve comprehensive information." />
+  <meta property="og:url" content="https://gitpv.xyz/" />
+  <meta property="og:site_name" content="Github Profile Viewer" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="/img/favicon.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:type" content="website" />
+  <meta property="og:email" content="destekdctr@gmail.com" />
+  <meta name="keywords" content="github profile viewer, github stats, github profile" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="Github Profile Viewer" />
+  <meta name="twitter:creator" content="ErenKrs" />
+  <meta name="twitter:creator:id" content="@erenkrs" />
+  <meta name="twitter:title" content="Github Profile Viewer" />
+  <meta name="twitter:description" content="Explore GitHub and Gist profile statistics effortlessly, utilizing the GitHub REST API to retrieve comprehensive information." />
+  <meta name="twitter:image" content="/img/favicon.png" />
+  <meta name="next-size-adjust" />
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css" />
+
+</head>
+
+<body>
+  <div class="container">
+    <%- include('/include/header.ejs') %>
+    <div class="hero"><%- include('components/main/hero.ejs') %></div>
+    <div class="Features"><%- include('components/main/features.ejs') %></div>
+    <div class="Blog"><%- include('components/main/blog.ejs') %></div>
+  </div>
+</body>
+<script src="js/main/search.js"></script>
+
+</html>

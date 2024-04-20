@@ -1,0 +1,213 @@
+header {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  color: rgba(255, 255, 255, 0.555);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 24px;
+  color: #969696;
+}
+
+header h1:hover {
+  text-decoration: underline;
+}
+
+.search {
+  margin-left: auto;
+}
+
+.search a {
+  background-color: #212121;
+  height: 34.5px;
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.596);
+  width: 82.5px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8px;
+  cursor: pointer;
+  padding-right: 8px;
+  text-align: center;
+  vertical-align: top;
+  text-decoration: none;
+  line-height: 20px;
+  margin: 0 0 0 16;
+  padding: 0 12 0 12;
+  min-height: auto;
+  min-width: auto;
+  transition: all 0s ease 0s ease;
+}
+
+* {
+  text-decoration: none;
+}
+
+.search a:hover {
+  background-color: #414141c4;
+  color: rgba(255, 255, 255, 0.664);
+}
+
+.search a:hover span {
+  text-decoration: underline;
+}
+
+.search a i {
+  margin-right: auto;
+  font-size: 14px;
+  margin-left: auto;
+}
+
+.search a span {
+  margin-right: auto;
+  font-size: 14px;
+  margin-left: auto;
+  font-weight: 500;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  animation: slideDown 0.5s ease;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI (Custom)", Roboto,
+    "Helvetica Neue", "Open Sans (Custom)", system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #1d1d1d;
+  padding: 20px;
+  position: relative;
+  border: 1px solid #2f2f2fa6;
+}
+
+.modal-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI (Custom)", Roboto,
+    "Helvetica Neue", "Open Sans (Custom)", system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.modal-header h2 {
+  color: rgba(255, 255, 255, 0.815);
+}
+
+.modal-content button {
+  height: 34px;
+  width: 90px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #212121;
+  color: rgba(255, 255, 255, 0.712);
+  border: none;
+}
+
+.modal-content button:hover {
+  background-color: #4141417e;
+  color: rgba(255, 255, 255, 0.664);
+}
+
+.modal-cont input {
+  width: calc(100% - 12.5px);
+  height: 36px;
+  padding-left: 12.5px;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.719);
+  background-color: #0f0f0f56;
+  border: 1px solid #2f2f2fa6;
+  margin-top: 12px;
+}
+
+.modal-cont input:focus {
+  outline: 2px solid #2f2f2fa6;
+  box-shadow: 1px 1px 3px #2f2f2fa6;
+}
+
+.modal-list {
+  margin-top: 15px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: 275px;
+  max-height: 300px;
+}
+
+.modal-list::-webkit-scrollbar {
+  display: none;
+}
+
+.user-item {
+  width: calc(100% - 25px);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 12.5px;
+}
+
+.user-img {
+  height: 37px;
+  margin-right: 12.5px;
+  width: 37px;
+  border-radius: 5px;
+  transition: all 0.6s ease;
+  cursor: pointer;
+}
+
+.user-item:hover {
+  background-color: #212121;
+}
+
+.user-name {
+  color: rgba(255, 255, 255, 0.37);
+  font-weight: 500;
+}
+
+.filterr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter {
+  width: 90px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-left: 5px;
+  width: 90px;
+  height: 37px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #212121;
+  color: rgba(255, 255, 255, 0.712);
+  border: none;
+}

@@ -1,0 +1,128 @@
+.container {
+  background-color: #111111;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 70%;
+  max-width: 1200px;
+  padding-bottom: 50px;
+}
+
+
+.hero {
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 350px;
+  display: block;
+  margin-top: 100px;
+}
+
+@keyframes shine {
+  0% {
+    color: #ffffffe1;
+  }
+
+  50% {
+    color: #474747;
+  }
+
+  100% {
+    color: #ffffffe1;
+  }
+}
+
+.hero h1 {
+  color: #474747;
+  letter-spacing: -1.5px;
+  line-height: 60px;
+  text-align: center;
+  white-space: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI (Custom)", Roboto,
+    "Helvetica Neue", "Open Sans (Custom)", system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 50px;
+  animation: shine 3s linear infinite;
+}
+
+.hero p {
+  font-size: 15px;
+  line-height: 20px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI (Custom)", Roboto,
+    "Helvetica Neue", "Open Sans (Custom)", system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-decoration: none solid rgb(238, 238, 238);
+  text-align: center;
+  text-indent: 0px;
+  color: #eeeeeec5;
+  color: #eeeeeec5;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.chrome {
+  border-radius: 10px;
+  width: 186px;
+  box-shadow: 0px 0px 9px rgba(53, 53, 53, 0.37);
+  height: 55px;
+  object-fit: cover;
+  margin-left: auto;
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+  background-color: #131215;
+  cursor: pointer;
+  justify-content: center;
+  margin-top: 30px;
+  transition: all 0.4s ease;
+}
+
+.chrome:hover {
+  transform: scale(1.06);
+  box-shadow: 0px 0px 9px rgba(53, 53, 53, 0.705);
+}
+
+#chrome {
+  border-radius: 10px;
+  height: 52px;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    background-color: #111111;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
+    padding-bottom: 50px;
+  }
+
+  .hero h1{
+    width: 90%;
+    font-size: 33px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #1d1d1d;
+  padding: 20px;
+  position: relative;
+
+  border: 1px solid #2f2f2fa6;
+}
+}
