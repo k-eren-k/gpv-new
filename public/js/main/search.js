@@ -31,6 +31,7 @@ window.addEventListener("click", function (event) {
   }
 });
 
+
 searchInput.addEventListener("input", function () {
   const searchValue = this.value.trim().toLowerCase();
   if (searchValue !== "") {
@@ -70,7 +71,14 @@ function displayUsers(data) {
 function handleError(error) {
   console.error("Error fetching data:", error);
 }
+const userList = document.getElementById("userList");
 
+userList.addEventListener("click", function(event) {
+  if (event.target.classList.contains("user-item")) {
+    const username = event.target.querySelector(".user-name").textContent;
+    window.location.href = `https://github.com/${username}`;
+  }
+});
 function clearUserList() {
   userList.innerHTML = "";
 }
